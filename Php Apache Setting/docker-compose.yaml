@@ -5,9 +5,13 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    container_name: php-server
+    container_name: php74-server
     restart: always
     ports:
       - 8080:80
     volumes:
       - ./html:/var/www/html
+      - ./config:/usr/local/etc/php
+volumes:
+  html: {}
+  config: {}
