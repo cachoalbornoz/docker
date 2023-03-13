@@ -17,3 +17,5 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-install gd
 
 RUN a2enmod rewrite
+
+EXPOSE 80
